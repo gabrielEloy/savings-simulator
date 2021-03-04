@@ -1,10 +1,10 @@
 import React from "react";
 import MaskedInput from "react-text-mask";
 import createNumberMask from "text-mask-addons/dist/createNumberMask";
+import CurrencyInputWrapper from './styles';
 
 interface ICurrencyInput extends React.InputHTMLAttributes<HTMLInputElement>{
   maskOptions?: {
-    prefix?: string,
     suffix?: string,
     includeThousandsSeparator?: boolean,
     thousandsSeparatorSymbol?: string,
@@ -14,10 +14,11 @@ interface ICurrencyInput extends React.InputHTMLAttributes<HTMLInputElement>{
     allowNegative?: boolean,
     allowLeadingZeroes?: boolean,
   };
+  preffix: JSX.Element;
 }
 
 const defaultMaskOptions = {
-  prefix: "$",
+  prefix: "", //I explicitly remove the library's custom preffix because I'm implementing my  own
   suffix: "",
   includeThousandsSeparator: true,
   thousandsSeparatorSymbol: ",",
@@ -28,13 +29,22 @@ const defaultMaskOptions = {
   allowLeadingZeroes: false,
 };
 
-const CurrencyInput = ({ maskOptions, ...inputProps }: ICurrencyInput) => {
+const CurrencyInput = ({ preffix, maskOptions, ...inputProps }: ICurrencyInput) => {
   const currencyMask = createNumberMask({
     ...defaultMaskOptions,
     ...maskOptions,
   });
 
-  return <MaskedInput mask={currencyMask} {...inputProps} />;
+  
+  
+  return (
+    <CurrencyInputWrapper>
+      <div className="preffix-container">
+        {preffix}
+      </div>
+      <MaskedInput mask={currencyMask} {...inputProps} />
+    </CurrencyInputWrapper>
+  )
 };
 
 CurrencyInput.defaultProps = {
