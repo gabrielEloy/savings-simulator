@@ -21,7 +21,7 @@ const DateSelectWraper = styled.div`
       align-items: center;
       background: white;
       cursor: pointer;
-      :focus{
+      :focus, :hover{
         outline: none;
         path{
           fill: #0079FF;
@@ -48,8 +48,7 @@ const DateSelectWraper = styled.div`
       color: #0079FF;
       transition: .3s;
     }
-    
-
+  
   }
 `;
 

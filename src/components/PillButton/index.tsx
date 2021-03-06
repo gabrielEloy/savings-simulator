@@ -12,7 +12,7 @@ cursor: pointer;
 border: none;
 font-weight: 600;
 
-:focus{
+:focus, :hover{
     outline: none;
     box-shadow: 0 0 0 0px #ffffff, 0 0 3px 5px #1b30a847;
 }
