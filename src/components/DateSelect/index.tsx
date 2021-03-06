@@ -4,9 +4,8 @@ import chevronRight from "../../assets/icons/chevron-right.svg";
 import Description from "../typography/Description";
 import Paragraph from "../typography/Paragraph";
 import { getStringDate } from "../../helpers/dates";
-import { SyntheticEvent } from "react";
 
-interface Props extends React.HTMLAttributes<HTMLElement>{
+interface Props extends React.HTMLAttributes<HTMLElement> {
   label?: string;
   monthsAhead: number;
   handleMonthsAhead: (monthsAhead: number) => void;
@@ -18,8 +17,6 @@ export const DateSelect = ({
   handleMonthsAhead,
   ...containerProps
 }: Props) => {
-  
-
   const handleDateIncrement = () => {
     handleMonthsAhead(monthsAhead + 1);
   };
@@ -27,17 +24,17 @@ export const DateSelect = ({
     handleMonthsAhead(monthsAhead - 1);
   };
 
-  const handleArrowKeys = ({key}: React.KeyboardEvent<HTMLInputElement>) => {
-    if(key === 'ArrowRight') return handleDateIncrement();
-    if(key === 'ArrowLeft') return handleDateDecrement();
-  }
-  
+  const handleArrowKeys = ({ key }: React.KeyboardEvent<HTMLInputElement>) => {
+    if (key === "ArrowRight") return handleDateIncrement();
+    if (key === "ArrowLeft") return handleDateDecrement();
+  };
+
   const composedKeyPress = (event: React.KeyboardEvent<HTMLInputElement>) => {
-    if(containerProps.onKeyDown){
+    if (containerProps.onKeyDown) {
       containerProps.onKeyDown(event);
     }
     handleArrowKeys(event);
-  }
+  };
 
   const [month, year] = getStringDate(monthsAhead).split(" ");
   return (

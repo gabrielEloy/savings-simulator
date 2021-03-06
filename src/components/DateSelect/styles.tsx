@@ -36,6 +36,17 @@ const DateSelectWraper = styled.div`
     }
 
   }
+
+  :focus{
+    outline: none;
+      
+    .label{
+      color: #0079FF;
+      transition: .3s;
+    }
+    
+
+  }
 `;
 
 export default DateSelectWraper;
