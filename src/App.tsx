@@ -28,8 +28,6 @@ const App = (props: Props) => {
     calculateMonthlyValue(monthsAhead, value)
   );
 
-    console.log({'document.activeElement':  document.activeElement})
-
   return (
     <Wrapper>
       <Header />

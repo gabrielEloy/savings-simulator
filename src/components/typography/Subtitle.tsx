@@ -8,7 +8,6 @@ interface SubtitleProps extends React.InputHTMLAttributes<HTMLInputElement> {
 
 //PATINHO FEIO
 function getFontSize(size?: string) {
-    console.log({size})
     switch (size) {
       case "undefined-mobile":
         return "12px";

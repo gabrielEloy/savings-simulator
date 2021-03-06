@@ -1,9 +1,12 @@
+import { useRef } from "react";
 import DateSelectWraper from "./styles";
 import chevronLeft from "../../assets/icons/chevron-left.svg";
 import chevronRight from "../../assets/icons/chevron-right.svg";
 import Description from "../typography/Description";
 import Paragraph from "../typography/Paragraph";
 import { getStringDate } from "../../helpers/dates";
+import ChevronRight from '../../assets/icons/ChevronRight';
+import ChevronLeft from '../../assets/icons/ChevronLeft';
 
 interface Props extends React.HTMLAttributes<HTMLElement> {
   label?: string;
@@ -17,6 +20,9 @@ export const DateSelect = ({
   handleMonthsAhead,
   ...containerProps
 }: Props) => {
+  const leftArrowButtonRef = useRef() as React.MutableRefObject<HTMLButtonElement>;
+  const rightArrowButtonRef = useRef() as React.MutableRefObject<HTMLButtonElement>;
+
   const handleDateIncrement = () => {
     handleMonthsAhead(monthsAhead + 1);
   };
@@ -25,8 +31,17 @@ export const DateSelect = ({
   };
 
   const handleArrowKeys = ({ key }: React.KeyboardEvent<HTMLInputElement>) => {
-    if (key === "ArrowRight") return handleDateIncrement();
-    if (key === "ArrowLeft") return handleDateDecrement();
+    const mappedKeyboardActions: {[key: string]: React.MutableRefObject<HTMLButtonElement>} = {
+      'ArrowLeft': leftArrowButtonRef,
+      'ArrowRight': rightArrowButtonRef
+    }
+    
+    const targetDOMNode = mappedKeyboardActions[key]
+
+    if(targetDOMNode){
+      targetDOMNode.current.focus();
+      targetDOMNode.current.click();
+    }
   };
 
   const composedKeyPress = (event: React.KeyboardEvent<HTMLInputElement>) => {
@@ -44,11 +59,12 @@ export const DateSelect = ({
       </div>
       <div className="date-selector-content">
         <button
+          ref={leftArrowButtonRef}
           disabled={monthsAhead <= 1}
           onClick={handleDateDecrement}
           className="controls"
-        >
-          <img src={chevronLeft} alt="arrow left" />
+          >
+          <ChevronLeft aria-labelledby="arrow left"/>
         </button>
         <div className="input">
           <Paragraph color="#1E2A32" fontWeight="semi-bold">
@@ -56,8 +72,12 @@ export const DateSelect = ({
           </Paragraph>
           <Paragraph>{year}</Paragraph>
         </div>
-        <button onClick={handleDateIncrement} className="controls">
-          <img src={chevronRight} alt="arrow right" />
+        <button
+          ref={rightArrowButtonRef}
+          onClick={handleDateIncrement}
+          className="controls"
+        >
+          <ChevronRight aria-labelledby="arrow right"/>
         </button>
       </div>
     </DateSelectWraper>

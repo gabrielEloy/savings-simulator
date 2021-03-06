@@ -21,9 +21,13 @@ const DateSelectWraper = styled.div`
       align-items: center;
       background: white;
       cursor: pointer;
-      :focus {
+      :focus{
         outline: none;
-      }
+        path{
+          fill: #0079FF;
+          transition: .3s;
+        }
+      } 
     }
     .input {
       display: flex;
@@ -32,12 +36,12 @@ const DateSelectWraper = styled.div`
       justify-content: space-between;
       flex: 3;
       border: none;
-      padding: 11px 25px;    
+      padding: 11px 0px;
     }
 
   }
 
-  :focus{
+  :focus-within{
     outline: none;
       
     .label{
