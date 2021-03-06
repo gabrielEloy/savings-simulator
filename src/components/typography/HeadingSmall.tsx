@@ -19,7 +19,7 @@ interface HeadingSmallProps {
 
 const HeadingSmall = styled.h3<HeadingSmallProps>`
   font-size: ${({ size }) => getFontSize(size)};
-  color: ${({ color }) => color || "#1E2A32"};
+  color: ${({ color, theme }) => color || theme.bluegrayDark};
   font-family: "Rubik", sans-serif;
   display: inline;
   font-weight: 500;

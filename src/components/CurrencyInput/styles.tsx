@@ -24,7 +24,7 @@ const CurrencyInputWrapper = styled.div`
       border: none;
       width: 100%;
       font-size: 24px;
-      color: #4d6475;
+      color: ${({theme}) => theme.blueGrayLight};
       font-family: "Rubik", sans-serif;
       font-weight: 500;
       padding: 15px;
@@ -37,7 +37,7 @@ const CurrencyInputWrapper = styled.div`
 
   :focus-within{
     .label{
-      color: #0079FF;
+      color: ${({theme}) => theme.bradColorSecundary};
       transition: .3s;
     }
   }

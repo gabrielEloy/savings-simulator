@@ -30,7 +30,7 @@ function getFontWeight(weight?: string){
 const Subtitle = styled.h2<SubtitleProps>`
     font-weight: ${({fontWeight}) => getFontWeight(fontWeight)};
     font-size: ${({fontSize}) => getFontSize(fontSize)};
-    color: ${({color}) =>  color || '#1E2A32'};
+    color: ${({ color, theme }) => color || theme.bluegrayDark};
     font-family: 'Work Sans', sans-serif;
     display: inline;
 

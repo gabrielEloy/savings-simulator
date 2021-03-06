@@ -24,7 +24,7 @@ const DateSelectWraper = styled.div`
       :focus, :hover{
         outline: none;
         path{
-          fill: #0079FF;
+          fill: ${({theme}) => theme.bradColorSecundary};
           transition: .3s;
         }
       } 
@@ -45,7 +45,7 @@ const DateSelectWraper = styled.div`
     outline: none;
       
     .label{
-      color: #0079FF;
+      color: ${({theme}) => theme.bradColorSecundary};
       transition: .3s;
     }
   

@@ -70,7 +70,7 @@ const Wrapper = styled.div`
         }
 
         .desc {
-          background: #f4f8fa;
+          background: ${({theme}) => theme.background};
           padding: 26px 32px;
           display: flex;
           justify-content: flex-start;
