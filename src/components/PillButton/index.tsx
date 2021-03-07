@@ -6,8 +6,8 @@ const PillButton = styled.button`
   border-radius: 32px;
   font-family: "Work Sans", sans-serif;
   font-size: 16px;
-  padding: 18px;
-  width: 100%;
+  padding: 18px 0;
+  padding-inline: clamp(5.75em,128px,128px);
   cursor: pointer;
   border: none;
   font-weight: 600;

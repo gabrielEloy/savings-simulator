@@ -15,7 +15,6 @@ const Wrapper = styled.div`
 
     .simulator-container {
       background: white;
-      width: 40%;
       min-width: 560px;
       min-height: 511px;
       align-self: center;
