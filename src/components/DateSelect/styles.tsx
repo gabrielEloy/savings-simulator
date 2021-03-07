@@ -21,7 +21,15 @@ const DateSelectWraper = styled.div`
       align-items: center;
       background: white;
       cursor: pointer;
-      :focus, :hover{
+      :disabled{
+        opacity: .6;
+        cursor: default;
+        :hover{
+          fill: red;
+        }
+      }
+
+      :focus, :hover:not([disabled]){
         outline: none;
         path{
           fill: ${({theme}) => theme.bradColorSecundary};

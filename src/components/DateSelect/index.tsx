@@ -62,7 +62,7 @@ export const DateSelect = ({
           onClick={handleDateDecrement}
           className="controls"
           >
-          <ChevronLeft aria-labelledby="arrow left"/>
+          <ChevronLeft aria-label="arrow-left" name="chevron-left"/>
         </button>
         <div className="input">
           <Paragraph color="#1E2A32" fontWeight="semi-bold">
@@ -75,7 +75,7 @@ export const DateSelect = ({
           onClick={handleDateIncrement}
           className="controls"
         >
-          <ChevronRight aria-labelledby="arrow right"/>
+          <ChevronRight aria-label="arrow-right" name="chevron-left"/>
         </button>
       </div>
     </DateSelectWraper>

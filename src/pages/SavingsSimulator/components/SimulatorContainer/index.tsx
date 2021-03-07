@@ -12,12 +12,13 @@ import PillButton from "components/PillButton";
 import { getStringDate } from "helpers/dates";
 import { numberCurrencyToString } from "helpers/currency";
 import { calculateMonthlyValue } from "helpers/math";
+import { FUTURE_MONTHS, MONEY_GOAL} from 'constants/Initialvalues';
 
 interface Props {}
 
 const SimulatorContainer = (props: Props) => {
-  const [value, setValue] = useState(25000);
-  const [monthsAhead, setMonthsAhead] = useState(10);
+  const [value, setValue] = useState(MONEY_GOAL);
+  const [monthsAhead, setMonthsAhead] = useState(FUTURE_MONTHS);
 
   const handleMonthsAhead = (value: number) => setMonthsAhead(value);
   const handleValue = (value: number) => setValue(value);
@@ -40,6 +41,7 @@ const SimulatorContainer = (props: Props) => {
             className="total"
             preffix={<img src={dollarSign} alt="Dollar sign" />}
             label="Total amount"
+            placeholder="insert the desired value"
             value={value}
             handleValue={handleValue}
           />

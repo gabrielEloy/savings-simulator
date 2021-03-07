@@ -1,0 +1,215 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Savings simulator component check app's initial structure should match the snapshot 1`] = `
+<div>
+  <div
+    class="sc-dlfnbm gpTfrs"
+  >
+    <div
+      class="sc-bdfBwQ hLBLF"
+    >
+      <img
+        alt="origin"
+        src="brand_logo.svg"
+      />
+    </div>
+    <h2
+      class="sc-gsTCUz eNtpqv subtitle"
+      color="#1B31A8"
+    >
+      Let's plan your 
+      <strong>
+        saving goal.
+      </strong>
+    </h2>
+    <div
+      class="content"
+    >
+      <div
+        class="sc-hKgILt eCAnQM"
+      >
+        <div
+          class="simulator-container"
+        >
+          <div
+            class="title"
+          >
+            <img
+              alt="house icon"
+              src="house.svg"
+            />
+            <div
+              class="text"
+            >
+              <h3
+                class="sc-jSgupP fegsyl header-text"
+              >
+                Buy a house
+              </h3>
+              <p
+                class="sc-gKsewC hdTzWd"
+              >
+                Saving goal
+              </p>
+            </div>
+          </div>
+          <div
+            class="data-inputs"
+          >
+            <div
+              class="sc-fubCfw gHrCnJ"
+            >
+              <span
+                class="sc-iBPRYJ fNbmqV label"
+              >
+                Total amount
+              </span>
+              <div
+                class="input-container"
+              >
+                <div
+                  class="preffix-container"
+                >
+                  <img
+                    alt="Dollar sign"
+                    src="dollar-sign.svg"
+                  />
+                </div>
+                <input
+                  class="total"
+                  placeholder="insert the desired value"
+                  value="25000"
+                />
+              </div>
+            </div>
+            <div
+              class="sc-pFZIQ eZNIEq months"
+              tabindex="0"
+            >
+              <div
+                class="label"
+              >
+                <span
+                  class="sc-iBPRYJ fNbmqV label"
+                >
+                  Reach goal by
+                </span>
+              </div>
+              <div
+                class="date-selector-content"
+              >
+                <button
+                  class="controls"
+                >
+                  <svg
+                    aria-label="arrow-left"
+                    fill="none"
+                    height="24"
+                    name="chevron-left"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      clip-rule="evenodd"
+                      d="M15.707 5.293a1 1 0 010 1.414L10.414 12l5.293 5.293a1 1 0 01-1.414 1.414l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 0z"
+                      fill="#8A9CA9"
+                      fill-rule="evenodd"
+                    />
+                  </svg>
+                </button>
+                <div
+                  class="input"
+                >
+                  <p
+                    class="sc-gKsewC iWaxtf"
+                    color="#1E2A32"
+                    font-weight="semi-bold"
+                  >
+                    December
+                  </p>
+                  <p
+                    class="sc-gKsewC hdTzWd"
+                  >
+                    2021
+                  </p>
+                </div>
+                <button
+                  class="controls"
+                >
+                  <svg
+                    aria-label="arrow-right"
+                    fill="none"
+                    height="24"
+                    name="chevron-left"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      clip-rule="evenodd"
+                      d="M8.293 5.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L13.586 12 8.293 6.707a1 1 0 010-1.414z"
+                      fill="#8A9CA9"
+                      fill-rule="evenodd"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="montly-amout-container"
+          >
+            <div
+              class="values"
+            >
+              <h2
+                class="sc-gsTCUz jwvVTA"
+              >
+                Monthly amount
+              </h2>
+              <h3
+                class="sc-jSgupP jSoLBx"
+                color="#0079FF"
+              >
+                $2,500.00
+              </h3>
+            </div>
+            <div
+              class="desc"
+            >
+              <span
+                class="sc-eCssSg lfaeVv"
+              >
+                You’re planning 
+                <strong>
+                  10
+                   monthly deposits
+                </strong>
+                 to reach your 
+                <strong>
+                  $2,500.00
+                </strong>
+                 goal by
+                 
+                <strong>
+                  December 2021
+                </strong>
+              </span>
+            </div>
+          </div>
+          <div
+            class="confirm-button-container"
+          >
+            <button
+              class="sc-jrAGrp gfAeDP"
+            >
+              Confirm
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
