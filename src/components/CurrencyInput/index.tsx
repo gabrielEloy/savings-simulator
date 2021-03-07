@@ -1,10 +1,10 @@
 import React from "react";
 import MaskedInput from "react-text-mask";
 import createNumberMask from "text-mask-addons/dist/createNumberMask";
-import defaultMaskOptions from "../../constants/defaultMaskOptions";
-import { stringCurrenctyToNumber } from "../../helpers/currency";
-import IMaskOptions from "../../interfaces/IMaskOptions";
-import Description from "../typography/Description";
+import defaultMaskOptions from "constants/defaultMaskOptions";
+import { stringCurrenctyToNumber } from "helpers/currency";
+import IMaskOptions from "interfaces/IMaskOptions";
+import Description from "components/typography/Description";
 import CurrencyInputWrapper from "./styles";
 
 interface ICurrencyInput extends React.InputHTMLAttributes<HTMLInputElement> {

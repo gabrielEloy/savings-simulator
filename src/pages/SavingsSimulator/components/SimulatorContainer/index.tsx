@@ -1,17 +1,17 @@
 import { useState } from "react";
 import Wrapper from "./styles";
-import Subtitle from "../../../../components/typography/Subtitle";
-import Caption from "../../../../components/typography/Caption";
-import houseIcon from "../../../../assets/icons/house.svg";
-import HeadingSmall from "../../../../components/typography/HeadingSmall";
-import Paragraph from "../../../../components/typography/Paragraph";
-import CurrencyInput from "../../../../components/CurrencyInput";
-import dollarSign from "../../../../assets/icons/dollar-sign.svg";
-import { DateSelect } from "../../../../components/DateSelect";
-import PillButton from "../../../../components/PillButton";
-import { getStringDate } from "../../../../helpers/dates";
-import { numberCurrencyToString } from "../../../../helpers/currency";
-import { calculateMonthlyValue } from "../../../../helpers/math";
+import Subtitle from "components/typography/Subtitle";
+import Caption from "components/typography/Caption";
+import houseIcon from "assets/icons/house.svg";
+import HeadingSmall from "components/typography/HeadingSmall";
+import Paragraph from "components/typography/Paragraph";
+import CurrencyInput from "components/CurrencyInput";
+import dollarSign from "assets/icons/dollar-sign.svg";
+import { DateSelect } from "components/DateSelect";
+import PillButton from "components/PillButton";
+import { getStringDate } from "helpers/dates";
+import { numberCurrencyToString } from "helpers/currency";
+import { calculateMonthlyValue } from "helpers/math";
 
 interface Props {}
 

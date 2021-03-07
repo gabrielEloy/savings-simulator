@@ -1,4 +1,4 @@
-import INumberCurrencyToString from '../interfaces/INumberCurrencyToString';
+import INumberCurrencyToString from 'interfaces/INumberCurrencyToString';
 
 export const stringCurrenctyToNumber = (value: string, options?: any) => parseFloat(value.replaceAll(',', ''));
 

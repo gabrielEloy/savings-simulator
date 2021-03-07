@@ -1,6 +1,6 @@
-import { Header } from "../../components/Header";
-import Subtitle from "../../components/typography/Subtitle";
-import Wrapper from "../../AppStyles";
+import { Header } from "components/Header";
+import Subtitle from "components/typography/Subtitle";
+import Wrapper from "AppStyles";
 import SimulatorContainer from './components/SimulatorContainer';
 
 

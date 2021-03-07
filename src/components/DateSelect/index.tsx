@@ -1,10 +1,10 @@
 import { useRef } from "react";
 import DateSelectWraper from "./styles";
-import Description from "../typography/Description";
-import Paragraph from "../typography/Paragraph";
-import { getStringDate } from "../../helpers/dates";
-import ChevronRight from '../../assets/icons/ChevronRight';
-import ChevronLeft from '../../assets/icons/ChevronLeft';
+import Description from "components/typography/Description";
+import Paragraph from "components/typography/Paragraph";
+import { getStringDate } from "helpers/dates";
+import ChevronRight from 'assets/icons/ChevronRight';
+import ChevronLeft from 'assets/icons/ChevronLeft';
 
 interface Props extends React.HTMLAttributes<HTMLElement> {
   label?: string;
