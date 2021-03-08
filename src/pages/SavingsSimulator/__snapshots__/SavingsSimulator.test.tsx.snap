@@ -158,7 +158,7 @@ exports[`Savings simulator component check app's initial structure should match 
             </div>
           </div>
           <div
-            class="montly-amout-container"
+            class="monthly-amount-container"
           >
             <div
               class="values"

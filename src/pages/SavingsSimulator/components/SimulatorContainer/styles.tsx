@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const Wrapper = styled.div`
   display: flex;
-  min-height: calc(100vh - 176px);
+  min-height: calc(100vh - 180px);
   align-items: center;
   flex-direction: column;
   justify-content: flex-start;
@@ -49,7 +49,7 @@ const Wrapper = styled.div`
       }
     }
 
-    .montly-amout-container {
+    .monthly-amount-container {
       margin-top: 24px;
       border: 1px solid #e9eef2;
       border-radius: 8px;
@@ -91,7 +91,7 @@ const Wrapper = styled.div`
         }
       }
 
-      .montly-amout-container {
+      .monthly-amount-container {
         .values {
           padding: 27px 24px 25px 24px;
         }

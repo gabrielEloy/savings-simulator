@@ -53,7 +53,7 @@ const SimulatorContainer = (props: Props) => {
             tabIndex={0}
           />
         </div>
-        <div className="montly-amout-container">
+        <div className="monthly-amount-container">
           <div className="values">
             <Subtitle>Monthly amount</Subtitle>
             <HeadingSmall color="#0079FF" size="medium">

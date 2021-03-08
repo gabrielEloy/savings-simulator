@@ -7,7 +7,7 @@ const PillButton = styled.button`
   font-family: "Work Sans", sans-serif;
   font-size: 16px;
   padding: 18px 0;
-  padding-inline: clamp(5.75em,128px,128px);
+  padding-inline: 128px;
   cursor: pointer;
   border: none;
   font-weight: 600;
@@ -16,6 +16,10 @@ const PillButton = styled.button`
   :hover {
     outline: none;
     box-shadow: 0 0 0 0px #ffffff, 0 0 3px 5px #1b30a847;
+  }
+
+  @media screen and (max-width: 436px){
+    padding-inline: 64px;
   }
 `;
 
