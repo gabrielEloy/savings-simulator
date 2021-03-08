@@ -1,1 +1,0 @@
-export const calculateMonthlyValue = (months: number, totalValue?: number) => totalValue ? totalValue/months : 0
