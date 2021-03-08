@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
 const DateSelectWraper = styled.div`
-  min-width: 190px;
+  min-width: 11.875rem;
   .label {
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
     display: block;
   }
   .date-selector-content {
@@ -44,7 +44,7 @@ const DateSelectWraper = styled.div`
       justify-content: space-between;
       flex: 3;
       border: none;
-      padding: 11px 0px;
+      padding: 0.6875rem 0;
     }
 
   }

@@ -4,11 +4,11 @@ import styled from "styled-components";
 const PillButton = styled.button`
   color: white;
   background: ${({ theme }) => theme.brandColorPrimary};
-  border-radius: 32px;
+  border-radius: 2rem;
   font-family: "Work Sans", sans-serif;
-  font-size: 16px;
-  padding: 18px 0;
-  padding-inline: 128px;
+  font-size: 1rem;
+  padding: 1.125rem 0;
+  padding-inline: 8rem;
   cursor: pointer;
   border: none;
   font-weight: 600;
@@ -20,7 +20,7 @@ const PillButton = styled.button`
   }
 
   @media screen and (max-width: ${screenSizes.MOBILE_SMALL}){
-    padding-inline: 64px;
+    padding-inline: 4rem;
   }
 `;
 

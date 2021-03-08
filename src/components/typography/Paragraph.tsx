@@ -16,7 +16,7 @@ function getFontWeight(weight?: string) {
 
 const Paragraph = styled.p<ParagraphProps>`
   color: ${({color}) =>  color || '#708797'};
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: ${({fontWeight}) => getFontWeight(fontWeight)};
 `;
 

@@ -4,12 +4,12 @@ import styled from "styled-components";
 function getFontSize(size?: string) {
   switch (size) {
     case "medium-mobile":
-      return "15px";
+      return "0.9375rem";
     case "medium":
-      return "32px";
+      return "2rem";
     case "small":
     default:
-      return "24px";
+      return "1.5rem";
   }
 }
 

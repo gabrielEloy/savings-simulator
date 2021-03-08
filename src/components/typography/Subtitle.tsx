@@ -10,10 +10,10 @@ interface SubtitleProps extends React.InputHTMLAttributes<HTMLInputElement> {
 function getFontSize(size: string = 'medium') {
     switch (size) {
       case "medium-mobile":
-        return "12px";
+        return "0.75rem";
       case "medium":
       default:
-        return "24px";
+        return "1.5rem";
     }
   }
 

@@ -3,7 +3,7 @@ import styled from "styled-components";
 const CurrencyInputWrapper = styled.div`
   width: 100%;
   .label{
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
     display: block;
   }
   
@@ -17,17 +17,17 @@ const CurrencyInputWrapper = styled.div`
       display: flex;
       justify-content: center;
       align-items: center;
-      padding: 0px 20px;
-      font-size: 24px;
+      padding: 0px 1.25rem;
+      font-size: 1.5rem;
     }
     input {
       border: none;
       width: 100%;
-      font-size: 24px;
+      font-size: 1.5rem;
       color: ${({theme}) => theme.blueGrayLight};
       font-family: "Rubik", sans-serif;
       font-weight: 500;
-      padding: 15px;
+      padding: 0.9375rem;
       height: 100%;
       :focus {
         outline: none;

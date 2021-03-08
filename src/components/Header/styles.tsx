@@ -1,14 +1,14 @@
 import styled from 'styled-components';
 
 const HeaderWrapper = styled.div`
-    height: 80px;
+    height: 5rem;
     display: flex;
     align-items: center;
     background: white;
 
     svg{
-        width: 100px;
-        height: 32px;
+        width: 6.25rem;
+        height: 2rem;
         margin-left: 5%;
     }
 `

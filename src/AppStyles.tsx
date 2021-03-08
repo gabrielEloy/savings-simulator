@@ -5,15 +5,15 @@ const Wrapper = styled.div`
   .subtitle{
     display: block;
     text-align: center;
-    padding: 48px 0 24px 0;
+    padding: 3rem 0 1.5rem 0;
   }
   
 
   @media screen and (max-width: ${screensizes.MOBILE}) {
-    .subtitle{
+    h2.subtitle{
       display: block;
-      margin-bottom: 20px;
-      font-size: 18px !important;
+      margin-bottom: 1.25rem;
+      font-size: 1.125rem;
       text-align: center;
     }
   }
