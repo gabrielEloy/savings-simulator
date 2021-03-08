@@ -7,9 +7,9 @@ interface SubtitleProps extends React.InputHTMLAttributes<HTMLInputElement> {
 }
 
 //PATINHO FEIO
-function getFontSize(size?: string) {
+function getFontSize(size: string = 'medium') {
     switch (size) {
-      case "undefined-mobile":
+      case "medium-mobile":
         return "12px";
       case "medium":
       default:
@@ -35,7 +35,7 @@ const Subtitle = styled.h2<SubtitleProps>`
     display: inline;
 
     @media screen and (max-width: 593px){
-        font-size: ${({fontSize}) => getFontSize(`${fontSize}-mobile`)};
+        font-size: ${({fontSize = 'medium'}) => getFontSize(`${fontSize}-mobile`)};
     }
 `
 

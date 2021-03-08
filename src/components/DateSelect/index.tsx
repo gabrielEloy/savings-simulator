@@ -5,6 +5,7 @@ import Paragraph from "components/typography/Paragraph";
 import { getStringDate } from "helpers/dates";
 import ChevronRight from 'assets/icons/ChevronRight';
 import ChevronLeft from 'assets/icons/ChevronLeft';
+import useKeyPress from 'hooks/useKeyPress'
 
 interface Props extends React.HTMLAttributes<HTMLElement> {
   label?: string;
@@ -21,6 +22,9 @@ export const DateSelect = ({
   const leftArrowButtonRef = useRef() as React.MutableRefObject<HTMLButtonElement>;
   const rightArrowButtonRef = useRef() as React.MutableRefObject<HTMLButtonElement>;
 
+  useKeyPress('ArrowRight', () => handleArrowKeys('ArrowRight'));
+  useKeyPress('ArrowLeft', () => handleArrowKeys('ArrowLeft'));
+
   const handleDateIncrement = () => {
     handleMonthsAhead(monthsAhead + 1);
   };
@@ -28,7 +32,7 @@ export const DateSelect = ({
     handleMonthsAhead(monthsAhead - 1);
   };
 
-  const handleArrowKeys = ({ key }: React.KeyboardEvent<HTMLInputElement>) => {
+  const handleArrowKeys = (key: string) => {
     const mappedKeyboardActions: {[key: string]: React.MutableRefObject<HTMLButtonElement>} = {
       'ArrowLeft': leftArrowButtonRef,
       'ArrowRight': rightArrowButtonRef
@@ -42,16 +46,10 @@ export const DateSelect = ({
     }
   };
 
-  const composedKeyPress = (event: React.KeyboardEvent<HTMLInputElement>) => {
-    if (containerProps.onKeyDown) {
-      containerProps.onKeyDown(event);
-    }
-    handleArrowKeys(event);
-  };
 
   const [month, year] = getStringDate(monthsAhead).split(" ");
   return (
-    <DateSelectWraper {...containerProps} onKeyDown={composedKeyPress}>
+    <DateSelectWraper {...containerProps}>
       <div className="label">
         {label && <Description className="label">{label}</Description>}
       </div>

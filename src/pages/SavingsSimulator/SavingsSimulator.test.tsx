@@ -10,7 +10,7 @@ describe("Savings simulator component", () => {
     it('should match the snapshot',  () => {
       const { container } = render(<SavingsSimulator />);
 
-      expect(container).toMatchSnapshot()
+      expect(container).toMatchSnapshot();
     })
 
     describe("data inputs", () => {
