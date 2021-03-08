@@ -3,10 +3,10 @@
 exports[`Savings simulator component check app's initial structure should match the snapshot 1`] = `
 <div>
   <div
-    class="sc-dlfnbm gpTfrs"
+    class="sc-dlfnbm dvuxKH"
   >
     <div
-      class="sc-bdfBwQ hzfUjE"
+      class="sc-bdfBwQ gBdBIi"
     >
       <svg
         aria-label="origin logo"
@@ -25,7 +25,7 @@ exports[`Savings simulator component check app's initial structure should match 
       </svg>
     </div>
     <h2
-      class="sc-gsTCUz eNtpqv subtitle"
+      class="sc-gsTCUz hCIzPk subtitle"
       color="#1B31A8"
     >
       Let's plan your 
@@ -37,7 +37,7 @@ exports[`Savings simulator component check app's initial structure should match 
       class="content"
     >
       <div
-        class="sc-hKgILt cBumsU"
+        class="sc-hKgILt dKfKHj"
       >
         <div
           class="simulator-container"
@@ -133,12 +133,12 @@ exports[`Savings simulator component check app's initial structure should match 
               class="text"
             >
               <h3
-                class="sc-jSgupP fegsyl header-text"
+                class="sc-jSgupP bioIPq header-text"
               >
                 Buy a house
               </h3>
               <p
-                class="sc-gKsewC hdTzWd"
+                class="sc-gKsewC QJNfd"
               >
                 Saving goal
               </p>
@@ -148,10 +148,10 @@ exports[`Savings simulator component check app's initial structure should match 
             class="data-inputs"
           >
             <div
-              class="sc-fubCfw gHrCnJ"
+              class="sc-fubCfw dSVmvp"
             >
               <span
-                class="sc-iBPRYJ fNbmqV label"
+                class="sc-iBPRYJ frjFOm label"
               >
                 Total amount
               </span>
@@ -191,14 +191,14 @@ exports[`Savings simulator component check app's initial structure should match 
               </div>
             </div>
             <div
-              class="sc-pFZIQ eZNIEq months"
+              class="sc-pFZIQ dQolvU months"
               tabindex="0"
             >
               <div
                 class="label"
               >
                 <span
-                  class="sc-iBPRYJ fNbmqV label"
+                  class="sc-iBPRYJ frjFOm label"
                 >
                   Reach goal by
                 </span>
@@ -230,14 +230,14 @@ exports[`Savings simulator component check app's initial structure should match 
                   class="input"
                 >
                   <p
-                    class="sc-gKsewC iWaxtf"
+                    class="sc-gKsewC cIQKCf"
                     color="#1E2A32"
                     font-weight="semi-bold"
                   >
                     December
                   </p>
                   <p
-                    class="sc-gKsewC hdTzWd"
+                    class="sc-gKsewC QJNfd"
                   >
                     2021
                   </p>
@@ -272,12 +272,12 @@ exports[`Savings simulator component check app's initial structure should match 
               class="values"
             >
               <h2
-                class="sc-gsTCUz jwvVTA"
+                class="sc-gsTCUz kNA-drH"
               >
                 Monthly amount
               </h2>
               <h3
-                class="sc-jSgupP jSoLBx"
+                class="sc-jSgupP fkeCsL"
                 color="#0079FF"
               >
                 $2,500.00
@@ -287,7 +287,7 @@ exports[`Savings simulator component check app's initial structure should match 
               class="desc"
             >
               <span
-                class="sc-eCssSg lfaeVv"
+                class="sc-eCssSg elfuYe"
               >
                 You’re planning 
                 <strong>
@@ -310,7 +310,7 @@ exports[`Savings simulator component check app's initial structure should match 
             class="confirm-button-container"
           >
             <button
-              class="sc-jrAGrp eclpiR"
+              class="sc-jrAGrp kXROUg"
             >
               Confirm
             </button>
