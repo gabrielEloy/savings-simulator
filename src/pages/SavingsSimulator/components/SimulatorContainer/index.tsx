@@ -51,6 +51,7 @@ const SimulatorContainer = (props: Props) => {
             handleMonthsAhead={handleMonthsAhead}
             className="months"
             tabIndex={0}
+            disableLeftArrow={monthsAhead <= 1}
           />
         </div>
         <div className="monthly-amount-container">

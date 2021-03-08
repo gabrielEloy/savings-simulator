@@ -8,15 +8,19 @@ import ChevronLeft from 'assets/icons/ChevronLeft';
 import useKeyPress from 'hooks/useKeyPress'
 
 interface Props extends React.HTMLAttributes<HTMLElement> {
-  label?: string;
   monthsAhead: number;
   handleMonthsAhead: (monthsAhead: number) => void;
+  disableLeftArrow?: boolean;
+  disableRightArrow?: boolean;
+  label?: string;
 }
 
 export const DateSelect = ({
   label,
   monthsAhead,
   handleMonthsAhead,
+  disableLeftArrow = false,
+  disableRightArrow = false,
   ...containerProps
 }: Props) => {
   const leftArrowButtonRef = useRef() as React.MutableRefObject<HTMLButtonElement>;
@@ -56,7 +60,7 @@ export const DateSelect = ({
       <div className="date-selector-content">
         <button
           ref={leftArrowButtonRef}
-          disabled={monthsAhead <= 1}
+          disabled={disableLeftArrow}
           onClick={handleDateDecrement}
           className="controls"
           >
@@ -72,6 +76,7 @@ export const DateSelect = ({
           ref={rightArrowButtonRef}
           onClick={handleDateIncrement}
           className="controls"
+          disabled={disableRightArrow}
         >
           <ChevronRight aria-label="arrow-right" name="chevron-left"/>
         </button>

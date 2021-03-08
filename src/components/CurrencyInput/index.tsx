@@ -9,7 +9,7 @@ import CurrencyInputWrapper from "./styles";
 
 interface ICurrencyInput extends React.InputHTMLAttributes<HTMLInputElement> {
   maskOptions?: IMaskOptions;
-  preffix: JSX.Element;
+  preffix?: JSX.Element;
   label?: string;
   value: number;
   handleValue: (value: number) => void;
@@ -37,12 +37,12 @@ const CurrencyInput = ({
     <CurrencyInputWrapper>
       {label && <Description className="label">{label}</Description>}
       <div className="input-container">
-        <div className="preffix-container">{preffix}</div>
+        {preffix && <div className="preffix-container">{preffix}</div>}
         <MaskedInput
+          {...inputProps}
           onChange={handleOnChange}
           value={value || ''}
           mask={currencyMask}
-          {...inputProps}
         />
       </div>
     </CurrencyInputWrapper>
