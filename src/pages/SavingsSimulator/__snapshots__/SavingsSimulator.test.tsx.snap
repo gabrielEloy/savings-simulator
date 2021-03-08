@@ -310,7 +310,7 @@ exports[`Savings simulator component check app's initial structure should match 
             class="confirm-button-container"
           >
             <button
-              class="sc-jrAGrp kXROUg"
+              class="sc-jrAGrp cQDDZ"
             >
               Confirm
             </button>

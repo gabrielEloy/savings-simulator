@@ -7,8 +7,7 @@ const PillButton = styled.button`
   border-radius: 2rem;
   font-family: "Work Sans", sans-serif;
   font-size: 1rem;
-  padding: 1.125rem 0;
-  padding-inline: 8rem;
+  padding: 1.125rem 8rem;
   cursor: pointer;
   border: none;
   font-weight: 600;
@@ -20,7 +19,7 @@ const PillButton = styled.button`
   }
 
   @media screen and (max-width: ${screenSizes.MOBILE_SMALL}){
-    padding-inline: 4rem;
+    padding: 1.125rem 4rem;
   }
 `;
 

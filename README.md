@@ -5,11 +5,17 @@ Saving Goal simulator
 <p align="center">One key to financial well-being is planning & saving for your goals. Users can have many saving goals (e.g. go to college or throw a wedding party) and it is our job to help them accomplish it.</p>
 
 <p align="center">
-  <a href="https://github.com/Rocketseat/youtube-challenge-recoil/graphs/contributors">
-    <img src="https://img.shields.io/github/contributors/rocketseat/youtube-challenge-recoil?color=%237159c1&logoColor=%237159c1&style=flat" alt="Contributors">
+  <a target="_blank" rel="noopener noreferrer" href="https://pt-br.reactjs.org/">
+   <img src="https://img.shields.io/npm/v/react.svg?style=flat" alt="react version 17.0.1">
   </a>
-  <a href="https://opensource.org/licenses/MIT">
-    <img src="https://img.shields.io/github/license/rocketseat/youtube-challenge-recoil?color=%237159c1&logo=mit" alt="License">
+  <a target="_blank" rel="noopener noreferrer" href="https://www.typescriptlang.org/">
+    <img src="https://img.shields.io/badge/Typescript-4.1.2-blue" alt="typescript version 4.1.2">
+  </a>
+  <a target="_blank" rel="noopener noreferrer" href=https://testing-library.com/docs/react-testing-library/intro">
+    <img src="https://img.shields.io/badge/%40testing--library%2Freact-11.1.0-brightgreen" alt="react testint library version 11.1.0">
+  </a>
+  <a target="_blank" rel="noopener noreferrer" href="https://nodejs.org/en/">
+    <img src="https://img.shields.io/badge/Node-12.20.1-brightgreen" alt="node version 12.20.1">
   </a>
 </p>
 
@@ -35,10 +41,15 @@ you can acccess a deployed version of the app <a href="https://jovial-curie-8354
 ## Getting started
 
 1. Clone this repository;<br />
-2. Run `npm or yarn install` at each project in order to install dependencies.<br />
+2. Run `npm or yarn install` at the project to install dependencies.<br />
 3. Run `npm run start` or `yarn start`.<br />
 4. Access `localhost:3000` in your browser.<br />
 
-## Contributing
+## Testing
 
-Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests.
+the tests in this project have been written using jest + react testing library. to run them you must execute the following command:
+
+```
+  yarn test
+```
+
