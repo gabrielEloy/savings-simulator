@@ -6,7 +6,7 @@ const HeaderWrapper = styled.div`
     align-items: center;
     background: white;
 
-    img{
+    svg{
         width: 100px;
         height: 32px;
         margin-left: 5%;

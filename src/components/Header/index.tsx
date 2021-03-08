@@ -1,5 +1,5 @@
 import HeaderWrapper from './styles';
-import logo from 'assets/icons/brand_logo.svg';
+import BrandLogo from 'assets/icons/BrandLogo';
 
 
 interface Props extends React.HTMLAttributes<HTMLElement>{}
@@ -7,7 +7,7 @@ interface Props extends React.HTMLAttributes<HTMLElement>{}
 export const Header = (props: Props) => {
     return (
         <HeaderWrapper {...props}>
-            <img src={logo} alt="origin" />
+            <BrandLogo aria-label="origin logo"/>
         </HeaderWrapper>
     )
 }

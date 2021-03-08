@@ -2,17 +2,17 @@ import { useState } from "react";
 import Wrapper from "./styles";
 import Subtitle from "components/typography/Subtitle";
 import Caption from "components/typography/Caption";
-import houseIcon from "assets/icons/house.svg";
+import House from "assets/icons/House";
 import HeadingSmall from "components/typography/HeadingSmall";
 import Paragraph from "components/typography/Paragraph";
 import CurrencyInput from "components/CurrencyInput";
-import dollarSign from "assets/icons/dollar-sign.svg";
+import DollarSign from "assets/icons/DollarSign";
 import { DateSelect } from "components/DateSelect";
 import PillButton from "components/PillButton";
 import { getStringDate } from "helpers/dates";
 import { numberCurrencyToString } from "helpers/currency";
 import { calculateMonthlyValue } from "helpers/math";
-import { FUTURE_MONTHS, MONEY_GOAL} from 'constants/Initialvalues';
+import { FUTURE_MONTHS, MONEY_GOAL } from "constants/Initialvalues";
 
 interface Props {}
 
@@ -30,7 +30,7 @@ const SimulatorContainer = (props: Props) => {
     <Wrapper>
       <div className="simulator-container">
         <div className="title">
-          <img src={houseIcon} alt="house icon" />
+          <House width={80} height={80} aria-label="house icon" />
           <div className="text">
             <HeadingSmall className="header-text">Buy a house</HeadingSmall>
             <Paragraph>Saving goal</Paragraph>
@@ -39,7 +39,7 @@ const SimulatorContainer = (props: Props) => {
         <div className="data-inputs">
           <CurrencyInput
             className="total"
-            preffix={<img src={dollarSign} alt="Dollar sign" />}
+            preffix={<DollarSign aria-label="$" />}
             label="Total amount"
             placeholder="insert the desired value"
             value={value}

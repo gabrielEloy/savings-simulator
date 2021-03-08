@@ -32,7 +32,7 @@ const Wrapper = styled.div`
         }
       }
 
-      img {
+      svg {
         width: 80px;
       }
     }
