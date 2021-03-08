@@ -125,6 +125,17 @@ describe("Savings simulator component", () => {
         const twoMonthsAgoQuery = screen.getByText(twoMonthsAgo);
         expect(twoMonthsAgoQuery).toBeTruthy();
       });
+      it('Should disable the left arrow when future months value is equal to 1', () => {
+        render(<SavingsSimulator />);
+
+        const arrowLeft = screen.getByLabelText("arrow-left");
+
+        for(let i = 0; i < FUTURE_MONTHS; i++){
+          fireEvent.click(arrowLeft);
+        }
+
+        expect(arrowLeft.closest('button')).toBeDisabled();
+      })
     });
   });
 });
