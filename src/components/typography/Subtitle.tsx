@@ -1,3 +1,4 @@
+import screenSizes from 'constants/screenSizes';
 import styled from 'styled-components';
 
 interface SubtitleProps extends React.InputHTMLAttributes<HTMLInputElement> {
@@ -6,7 +7,6 @@ interface SubtitleProps extends React.InputHTMLAttributes<HTMLInputElement> {
     color?: string;
 }
 
-//PATINHO FEIO
 function getFontSize(size: string = 'medium') {
     switch (size) {
       case "medium-mobile":
@@ -34,7 +34,7 @@ const Subtitle = styled.h2<SubtitleProps>`
     font-family: 'Work Sans', sans-serif;
     display: inline;
 
-    @media screen and (max-width: 593px){
+    @media screen and (max-width: ${screenSizes.MOBILE}){
         font-size: ${({fontSize = 'medium'}) => getFontSize(`${fontSize}-mobile`)};
     }
 `

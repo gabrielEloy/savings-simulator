@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import screensizes from 'constants/screenSizes';
 
 const Wrapper = styled.div`
   .subtitle{
@@ -8,7 +9,7 @@ const Wrapper = styled.div`
   }
   
 
-  @media screen and (max-width: 593px) {
+  @media screen and (max-width: ${screensizes.MOBILE}) {
     .subtitle{
       display: block;
       margin-bottom: 20px;

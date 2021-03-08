@@ -1,3 +1,4 @@
+import screenSizes from "constants/screenSizes";
 import styled from "styled-components";
 
 function getFontSize(size?: string) {
@@ -24,7 +25,7 @@ const HeadingSmall = styled.h3<HeadingSmallProps>`
   display: inline;
   font-weight: 500;
 
-  @media screen and (max-width: 593px){
+  @media screen and (max-width: ${screenSizes.MOBILE}){
     font-size: ${({ size }) => getFontSize(`${size}-mobile`)};
   }
 `;

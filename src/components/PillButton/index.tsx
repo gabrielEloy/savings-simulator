@@ -1,3 +1,4 @@
+import screenSizes from "constants/screenSizes";
 import styled from "styled-components";
 
 const PillButton = styled.button`
@@ -18,7 +19,7 @@ const PillButton = styled.button`
     box-shadow: 0 0 0 0px #ffffff, 0 0 3px 5px #1b30a847;
   }
 
-  @media screen and (max-width: 436px){
+  @media screen and (max-width: ${screenSizes.MOBILE_SMALL}){
     padding-inline: 64px;
   }
 `;

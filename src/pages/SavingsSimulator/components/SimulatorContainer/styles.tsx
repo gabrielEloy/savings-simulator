@@ -1,3 +1,4 @@
+import screenSizes from "constants/screenSizes";
 import styled from "styled-components";
 
 const Wrapper = styled.div`
@@ -78,7 +79,7 @@ const Wrapper = styled.div`
     }
   }
 
-  @media screen and (max-width: 593px) {
+  @media screen and (max-width: ${screenSizes.MOBILE}) {
     min-height: calc(100vh - 56px);
     .simulator-container {
       width: 100%;
