@@ -1,8 +1,8 @@
-import SavingsSimulator from './pages/SavingsSimulator';
+import Router from './Router';
 
 const App = () => {
   return (
-    <SavingsSimulator />
+    <Router />
   )
 }
 
