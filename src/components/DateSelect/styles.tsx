@@ -10,7 +10,7 @@ const DateSelectWraper = styled.div`
     display: flex;
     flex-direction: row;
     width: 100%;
-    border: 1px solid #e9eef2;
+    border: 1px solid ${({theme}) => theme.border};
     border-radius: 4px;
     overflow: hidden;
     .controls {

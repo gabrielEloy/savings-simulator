@@ -5,7 +5,8 @@ const HeaderWrapper = styled.div`
     display: flex;
     align-items: center;
     background: white;
-
+    cursor: pointer;
+    
     svg{
         width: 6.25rem;
         height: 2rem;

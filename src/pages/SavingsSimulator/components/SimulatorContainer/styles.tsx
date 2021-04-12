@@ -52,7 +52,7 @@ const Wrapper = styled.div`
 
     .monthly-amount-container {
       margin-top: 1.5rem;
-      border: 1px solid #e9eef2;
+      border: 1px solid ${({theme}) => theme.border};
       border-radius: 8px;
       overflow: hidden;
 

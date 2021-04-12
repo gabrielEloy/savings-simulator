@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Wrapper from "./styles";
 import Subtitle from "components/typography/Subtitle";
 import Caption from "components/typography/Caption";
@@ -13,12 +13,30 @@ import { getStringDate } from "helpers/dates";
 import { numberCurrencyToString } from "helpers/currency";
 import { calculateMonthlyValue } from "helpers/math";
 import { FUTURE_MONTHS, MONEY_GOAL } from "constants/Initialvalues";
+import { useHistory, useParams } from "react-router-dom";
+import useSavings from "hooks/useSavings";
 
 interface Props {}
 
 const SimulatorContainer = (props: Props) => {
+  const history = useHistory();
+  const params = useParams();
   const [value, setValue] = useState(MONEY_GOAL);
   const [monthsAhead, setMonthsAhead] = useState(FUTURE_MONTHS);
+
+  const {editSavings, getSavingById} = useSavings();
+
+  //@ts-ignore
+  const saving = getSavingById(params.id)
+
+  useEffect(() => {
+    if(saving?.value && saving?.monthsAhead){
+      setValue(saving.value)
+      setMonthsAhead(saving.monthsAhead)
+    }
+  }, [saving])
+
+  
 
   const handleMonthsAhead = (value: number) => setMonthsAhead(value);
   const handleValue = (value: number) => setValue(value);
@@ -26,6 +44,14 @@ const SimulatorContainer = (props: Props) => {
   const monthlyAmount = numberCurrencyToString(
     calculateMonthlyValue(monthsAhead, value)
   );
+
+  const handleSaveGoal = () => {
+    //@ts-ignore
+    console.log({ id:params.id, value, monthsAhead })
+    //@ts-ignore
+    editSavings({ id:params.id, value, monthsAhead })
+    history.push('/');
+  }
   return (
     <Wrapper>
       <div className="simulator-container">
@@ -70,7 +96,7 @@ const SimulatorContainer = (props: Props) => {
           </div>
         </div>
         <div className="confirm-button-container">
-          <PillButton>Confirm</PillButton>
+          <PillButton onClick={handleSaveGoal}>Confirm</PillButton>
         </div>
       </div>
     </Wrapper>

@@ -10,7 +10,7 @@ const CurrencyInputWrapper = styled.div`
   .input-container {
     border: solid 1px black;
     display: flex;
-    border: 1px solid #e9eef2;
+    border: 1px solid ${({theme}) => theme.border};
     border-radius: 4px;
     overflow: hidden;
     .preffix-container {

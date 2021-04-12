@@ -6,5 +6,8 @@ declare module "styled-components" {
     blueGrayLight: string;
     bluegrayDark: string;
     background: string;
+    cardBackground: string;
+    border: string;
+    secondaryGray: string;
   }
 }
