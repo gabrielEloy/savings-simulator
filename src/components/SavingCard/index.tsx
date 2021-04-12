@@ -8,6 +8,7 @@ import SquareButton from "components/SquareButton";
 import Edit from "assets/icons/Edit";
 import { IconDictionary } from "helpers/Icons";
 
+
 interface Props {
   info: ISavingCard;
   onClick: (info: ISavingCard) => void;
